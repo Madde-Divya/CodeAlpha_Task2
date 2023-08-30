@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login with CAPTCHA</title>
+<link rel="stylesheet" href="captcha.css">
+</head>
+<body>
+<div class="login-container" >
+  <h2>LOGIN PAGE</h2>
+  <form id="login-form">
+    <input type="text" id="username" placeholder="Username" autocomplete="off">
+    <input type="password" id="password" placeholder="Password">
+   
+    <div class="captcha">
+      <div class="captcha-text" id="captcha-text"></div>
+   
+      <input type="text" id="captcha-input" placeholder="Enter CAPTCHA">
+      <button type="button" class="refresh-btn" id="refresh-btn"><img src="grefreshimg.jpg" height="60px" width="55px"></button>
+      
+    </div>
+    <p id="captcha-error" class="error-message"></p>
+    <button type="submit" id="login-btn">Login</button>
+  </form>
+</div>
+
+<script src="captcha.js"></script>
+</body>
+</html>
